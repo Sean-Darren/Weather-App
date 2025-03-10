@@ -12,7 +12,7 @@ A simple weather application built with React that fetches weather data from Ope
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Weather-App.git
+   git clone https://github.com/Sean-Darren/Weather-App.git
    cd Weather-App
    ```
 2. Install dependencies:
