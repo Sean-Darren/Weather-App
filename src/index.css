@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+.App:before {
+  content: "";
+  background: url(./assets/black-gradient.avif) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.App .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.App .description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: none;
+}
+
+.App .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: 12px;
+  padding: 5%;
+  background-color: rgba(190, 191, 187, 0.067);
+}
+
+.App .Search {
+  text-align: center;
+  padding: 1rem;
+}
+
+input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: 1px solid rgb(201, 194, 194);
+  background: rgba(94, 94, 44, 0.138);
+  color: whitesmoke;
+}
+
+::placeholder {
+  color: rgba(143, 149, 133, 0.979);
+}
+
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .container {
+    padding: 1rem;
+    max-width: 700px;
+  }
+
+  .App .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  input {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    width: 80%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .App .description {
+    position: relative;
+    right: -90%;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+    text-align: left;
+  }
+}
