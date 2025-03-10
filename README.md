@@ -1,4 +1,4 @@
-# Weather App
+# Weather App ⛅
 
 A simple weather application built with React that fetches weather data from OpenWeatherMap API.
 
